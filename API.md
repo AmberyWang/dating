@@ -20,6 +20,10 @@
 # 2 约会计划
 ## 2.1 【POST】创建&更新约会计划并生成约会方案列表
 ### /api/plan/schedule/list/generate
+### 请求头
+```JSON
+Authorization: Bearer <token>    // 鉴权令牌，从登录/注册时获取，验证用户身份
+```
 ### 入参
 ```JSON
 {
@@ -113,6 +117,10 @@
 
 ## 2.2 【POST】调整约会方案（支持创建和约会进行中的调整）
 ### /api/plan/schedule/update
+### 请求头
+```JSON
+Authorization: Bearer <token>    // 鉴权令牌，从登录/注册时获取，验证用户身份
+```
 ### 入参
 ```JSON
 {
@@ -208,6 +216,10 @@
 
 ## 2.3 【POST】确认约会方案
 ### /api/plan/schedule/ack
+### 请求头
+```JSON
+Authorization: Bearer <token>    // 鉴权令牌，从登录/注册时获取，验证用户身份
+```
 ### 入参
 ```JSON
 {
@@ -261,6 +273,10 @@
 
 ## 2.4 【GET】查询所有约会计划
 ### /api/plan/list
+### 请求头
+```JSON
+Authorization: Bearer <token>    // 鉴权令牌，从登录/注册时获取，验证用户身份
+```
 ### 入参
 ```JSON
 ```
@@ -358,6 +374,10 @@
 
 # 3 【POST】约会复盘
 ### /api/review/generate
+### 请求头
+```JSON
+Authorization: Bearer <token>    // 鉴权令牌，从登录/注册时获取，验证用户身份
+```
 ### 入参
 ```JSON
 {
@@ -379,6 +399,10 @@
 ## 4.1 登录人资料
 ### 4.1.1 【GET】查询我的资料
 #### /api/user/profile/get
+#### 请求头
+```JSON
+Authorization: Bearer <token>    // 鉴权令牌，从登录/注册时获取，验证用户身份
+```
 #### 入参
 ```JSON
 ```
@@ -400,6 +424,10 @@
 ```
 ### 4.1.2 【POST】更新我的资料
 #### /api/user/profile/update
+#### 请求头
+```JSON
+Authorization: Bearer <token>    // 鉴权令牌，从登录/注册时获取，验证用户身份
+```
 #### 入参
 ```JSON
 {
@@ -421,6 +449,10 @@
 
 ## 4.2 约会对象资料
 ### 4.2.1 【GET】查询约会对象资料
+#### 请求头
+```JSON
+Authorization: Bearer <token>    // 鉴权令牌，从登录/注册时获取，验证用户身份
+```
 #### /api/date/profile/get
 #### 入参
 ```JSON
@@ -449,6 +481,10 @@
 
 ### 4.2.2 【POST】新增&跟新约会对象资料
 #### /api/date/profile/update
+#### 请求头
+```JSON
+Authorization: Bearer <token>    // 鉴权令牌，从登录/注册时获取，验证用户身份
+```
 #### 入参
 ```JSON
 {
