@@ -51,7 +51,7 @@ Authorization: Bearer <token>    // 鉴权令牌，从登录/注册时获取，�
     ],
     "recentFocus": [ //近期焦虑点/关注点
       "个人成长", "睡眠问题"
-    ]
+    ],
     "trafficPrefer": "开车",  // 交通方式偏好，单选
   },
   "userInfo": [   // 约会双方信息（双向录入）
@@ -79,6 +79,7 @@ Authorization: Bearer <token>    // 鉴权令牌，从登录/注册时获取，�
     {
       "id": "schedule_001",  // 约会方案 ID
       "name": "浪漫晚餐与电影之夜",  // 大模型生成的日程标题
+      "pictures": ["", "", "", ""], // 约会方案图片，默认会传入4个
       "outfitRecmend": "正式的晚礼服，搭配高跟鞋或皮鞋。",  // 约会穿搭建议，适用于整个日程
       "itemsNeeded": "玫瑰花束，香水",  // 约会所需的物品，适用于整个日程
       "invitationPr": "想和你共度一个浪漫的晚餐时光，不如一起去体验一下法式美食？"  // 邀约文案
@@ -128,6 +129,7 @@ Authorization: Bearer <token>    // 鉴权令牌，从登录/注册时获取，�
   "schedule": {    // 待调整的约会方案
     "id": "schedule_001",  // 约会方案 ID
     "name": "浪漫晚餐与电影之夜",  // 大模型生成的日程标题
+    "pictures": ["", "", "", ""], // 约会方案图片，默认会传入4个
     "outfitRecmend": "正式的晚礼服，搭配高跟鞋或皮鞋。",  // 约会穿搭建议，适用于整个日程
     "itemsNeeded": "玫瑰花束，香水",  // 约会所需的物品，适用于整个日程
     "invitationPr": "想和你共度一个浪漫的晚餐时光，不如一起去体验一下法式美食？"  // 邀约文案
@@ -176,6 +178,7 @@ Authorization: Bearer <token>    // 鉴权令牌，从登录/注册时获取，�
   "schedule": {    // 调整后的约会方案
     "id": "schedule_001",  // 约会方案 ID
     "name": "浪漫晚餐与电影之夜",  // 大模型生成的日程标题
+    "pictures": ["", "", "", ""], // 约会方案图片，默认会传入4个
     "outfitRecmend": "正式的晚礼服，搭配高跟鞋或皮鞋。",  // 约会穿搭建议，适用于整个日程
     "itemsNeeded": "玫瑰花束，香水",  // 约会所需的物品，适用于整个日程
     "invitationPr": "想和你共度一个浪漫的晚餐时光，不如一起去体验一下法式美食？"  // 邀约文案
@@ -194,7 +197,7 @@ Authorization: Bearer <token>    // 鉴权令牌，从登录/注册时获取，�
         "endTime": "2024-09-25 21:00:00",  // 结束时间，格式：YYYY-MM-DD HH:mm:ss
         "status": "0",  // 约会事件是否已完成，0 待开始, 1 进行中, 2 已完成
         "averagePricePerPerson": "500-1000"  // 人均价
-        "isChange": false, // 是否已更换
+        "isChange": false // 是否已更换
       },
       {
         "id": "event_002",  // 约会事件的唯一标识符
@@ -207,7 +210,7 @@ Authorization: Bearer <token>    // 鉴权令牌，从登录/注册时获取，�
         "endTime": "2024-09-25 23:30:00",  // 结束时间，格式：YYYY-MM-DD HH:mm:ss
         "status": "0",  // 约会事件是否已完成，0 待开始, 1 进行中, 2 已完成
         "averagePricePerPerson": "100-300"  // 人均价
-        "isChange": true, // 是否已更换
+        "isChange": true // 是否已更换
       }
     ]
   }
@@ -227,6 +230,7 @@ Authorization: Bearer <token>    // 鉴权令牌，从登录/注册时获取，�
   "schedule": {    // 调整后的约会方案
       "id": "schedule_001",  // 约会方案 ID
       "name": "浪漫晚餐与电影之夜",  // 大模型生成的日程标题
+      "pictures": ["", "", "", ""], // 约会方案图片，默认会传入4个
       "outfitRecmend": "正式的晚礼服，搭配高跟鞋或皮鞋。",  // 约会穿搭建议，适用于整个日程
       "itemsNeeded": "玫瑰花束，香水",  // 约会所需的物品，适用于整个日程
       "invitationPr": "想和你共度一个浪漫的晚餐时光，不如一起去体验一下法式美食？"  // 邀约文案
@@ -330,6 +334,7 @@ Authorization: Bearer <token>    // 鉴权令牌，从登录/注册时获取，�
       "schedule": {    // 约会方案，如果 status=0, schedule为空
         "id": "schedule_001",  // 约会方案 ID
         "name": "浪漫晚餐与电影之夜",  // 大模型生成的日程标题
+        "pictures": ["", "", "", ""], // 约会方案图片，默认会传入4个
         "outfitRecmend": "正式的晚礼服，搭配高跟鞋或皮鞋。",  // 约会穿搭建议，适用于整个日程
         "itemsNeeded": "玫瑰花束，香水",  // 约会所需的物品，适用于整个日程
         "invitationPr": "想和你共度一个浪漫的晚餐时光，不如一起去体验一下法式美食？"  // 邀约文案
