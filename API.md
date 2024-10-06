@@ -380,7 +380,10 @@ Authorization: Bearer <token>    // 鉴权令牌，从登录/注册时获取，�
         "review": {
           "userfeedback": "xxxx",  // 用户反馈
           "datefeedback": "xxxx",  // 约会对象反馈
-          "conclusion": "很不错"   // 约会复盘
+          "tripReview": "今天的约会行程包括：万达影院观看电影，随后在东南亚菜馆用餐，之后前往新日密室逃脱体验，最后在必胜客结束约会。",   // 行程回顾
+          "feedbackAnalysis": "希望约会地点更加安静", //反馈分析
+          "suggestions": "选择更安静的餐厅，或者考虑户外约会",   // 未来建议
+          "conclusion": "这次约会的总体体验很棒，双方均表示期待下一次见面"  // 总结
         }
       }
     ]
@@ -408,7 +411,11 @@ Authorization: Bearer <token>    // 鉴权令牌，从登录/注册时获取，�
   "code": 200,   // 响应状态码，200表示请求成功
   "message": "Success",   // 响应信息，成功获取约会复盘数据的提示
   "data": {
-    "conclusion": "很不错"   // 约会复盘
+    "planId": 234,
+    "tripReview": "今天的约会行程包括：万达影院观看电影，随后在东南亚菜馆用餐，之后前往新日密室逃脱体验，最后在必胜客结束约会。",   // 行程回顾
+    "feedbackAnalysis": "希望约会地点更加安静", //反馈分析
+    "suggestions": "选择更安静的餐厅，或者考虑户外约会",   // 未来建议
+    "conclusion": "这次约会的总体体验很棒，双方均表示期待下一次见面"  // 总结
   }
 }
 ```
