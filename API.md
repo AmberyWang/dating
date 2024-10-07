@@ -596,8 +596,6 @@ Authorization: Bearer <token>    // 鉴权令牌，从登录/注册时获取，�
   "message": "string",  // 响应信息
   "data": [
     {
-      "matchId": "integer",
-      "photo": "string", // 头像
       "nickname": "string",// 昵称
       "gender": "string",  // "男"或"女"
       "stage": "string",    // "恋人未满", "情侣", "夫妻"
@@ -620,7 +618,6 @@ Authorization: Bearer <token>    // 鉴权令牌，从登录/注册时获取，�
 #### 入参
 ```JSON
 {
-  "matchId": 123, 
   "nickname": "string",// 昵称
   "gender": "string",  // "男"或"女"
   "stage": "string",    // "恋人未满", "情侣", "夫妻"
@@ -636,6 +633,6 @@ Authorization: Bearer <token>    // 鉴权令牌，从登录/注册时获取，�
 {
   "code": 200,
   "message": "约会对象资料添加成功",
-  "matchId": "integer" // 新增或更新的约会对象ID
+  "data": true
 }
 ```
